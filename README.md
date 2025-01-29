@@ -1,0 +1,3 @@
+# Dangling Pointer Bug in C++
+This repository demonstrates a common error in C++ involving dangling pointers and the use of std::vector.  When a vector is resized, iterators and pointers referencing its elements may become invalid. Attempting to dereference an invalid pointer leads to undefined behavior, often resulting in crashes or corrupted data. 
+The `bug.cpp` file contains code that reproduces this issue. The `solution.cpp` file offers a solution, illustrating safer ways to interact with std::vector to prevent dangling pointer errors.
